@@ -37,14 +37,29 @@ Raketa letí
 
 <p><h1>Č4</h1>
     <?php
-define('MAX', 100)
-define('MIN', 0)
-define('NUM', 10)
-    for ($k=0; $k <= 20; $k+= 1) { 
-       echo $k ."<br>";
-    }
+define('MAX_NUMBER', 100);
+define('MIN_NUMBER', 0);
+define('NUMBERS_COUNT', 10);
+
+for ($i=0; $i < NUMBERS_COUNT; $i++) { 
+    echo rand(MIN_NUMBER, MAX_NUMBER) . ",";
+}
+
 
     ?> <p>
+    <h1>Č5</h1>
+    
+    <?php
+for ($p=0; $p <= 400; $p+= 20) { 
+   ?> <div style="display: block; width:<?= $p ?>px; height: 20px; background-color: #454d59;"></div> 
+   <?php
+ }
+
+    ?>
+
+
+
+
 
 </body>
 </html>
